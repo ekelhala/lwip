@@ -86,6 +86,7 @@ struct mqtt_connect_client_info_t {
 #if LWIP_ALTCP && LWIP_ALTCP_TLS
   /** TLS configuration for secure connections */
   struct altcp_tls_config *tls_config;
+  const char* server_name;
 #endif
 };
 
